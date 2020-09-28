@@ -1,0 +1,16 @@
+
+<h2>Family {{family.name}}</h2>
+
+
+<hr/>
+
+<h4>Member List</h4>
+
+
+<p *ngFor="let member of members">
+    {{member.name}}
+    <button (click)="deleteMember(member.id)" class="button" >Delete</button>
+</p>
+
+<p>{{family.budget}}</p>
+

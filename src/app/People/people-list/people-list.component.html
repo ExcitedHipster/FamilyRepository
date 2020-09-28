@@ -1,0 +1,15 @@
+<h2>All People</h2>
+
+<hr/>
+
+<p *ngFor="let person of people">
+    {{person.name}}
+
+    <button (click)="deletePerson(person.id)" class="button" >delete</button>
+    <button (click)="updatePerson(person.id)" class="button" >update</button>
+    <button (click)="personDetails(person.id)" class="button" >details</button>
+</p>
+
+<hr/>
+
+<button (click)="addPerson()" class="button" >add</button>

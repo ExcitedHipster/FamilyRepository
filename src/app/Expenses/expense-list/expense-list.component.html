@@ -1,0 +1,12 @@
+<h1>Expenses!</h1>
+
+
+<p *ngFor="let expense of expenses">
+    {{expense.name}}
+    <button (click)="deleteExpense(expense.id)" class="button" >delete</button>
+    <button (click)="updateExpense(expense.id)" class="button" >update</button>
+</p>
+
+<hr/>
+
+<button routerLink="/Expense-Add" routerLinkActive="active" >add</button>

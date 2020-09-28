@@ -1,0 +1,22 @@
+<h1>Expenses!</h1>
+
+<form #expense="ngForm">
+    <div class="form-group">
+       <label >Name</label>-
+       <input type="text" class="form-control" name="name" [(ngModel)]="expense.name">
+   </div>
+   
+   
+   <div class="form-group">
+       <label>cost</label>-
+       <input type="number" class="form-control" name="cost" [(ngModel)]="expense.cost">
+   </div>
+
+   <div class="form-group">
+    <label>amountPerMonth</label>-
+    <input type="number" class="form-control" name="amountPerMonth" [(ngModel)]="expense.amountPerMonth">
+</div>
+   
+   <button class="button" (click)="addExpense(expense.value)" routerLink="/Expense-List" routerLinkActive="active">Add expense</button>
+</form>
+

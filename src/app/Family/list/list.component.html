@@ -1,0 +1,13 @@
+<h1>Families!</h1>
+
+
+<p *ngFor="let family of families">
+    {{family.name}}
+    <button (click)="chooseFamily(family)" class="button" >choose</button>
+    <button (click)="deleteFamily(family.id)" class="button" >delete</button>
+    <button (click)="updateFamily(family.id)" class="button" >update</button>
+</p>
+
+<hr/>
+
+<button (click)="addFamily()" class="button" >add</button>
